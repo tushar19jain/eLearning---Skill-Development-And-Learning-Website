@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Including the style sheet-->
-    <link rel="stylesheet" href="/pages/homepage/style.css">
+    <link rel="stylesheet" href="homepage/style.css">
+    <!--Including Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Including Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>E-Learning Skill Development And Learning Website</title>
 </head>
 <body>
@@ -14,14 +20,72 @@
             <ul class="nav">
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Issues</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
             </ul>
         </div>
         <div class="auth-buttons">
-            <button type="button" class="btn btn-primary">Login</button>
-            <button type="button" class="btn btn-dark">Signup</button>
+            <button type="button" class="btn-login">Login</button>
+            <button type="button" class="btn-signup">Signup</button>
         </div>
     </div>
+    <div class="container-two">
+        <div class="search-field">
+            <input type="text" name="search-field" id="" placeholder="What do you want to learn today?">
+        </div>
+        <div class="submit-search">
+            <button><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i></button>
+        </div>
+    </div>
+    <div class="container-three">
+        <h1 id="greeting"></h1>
+        <h2 id="username">Tushar</h2>
+    </div>
+    <div class="container-four">
+        <div class="container-four-left">
+            <h1 class="container-right-heading">
+                Your Subjects
+            </h1> <br>
+            <div id="filter-space">
+                <h3>Filter</h3>
+                <p><u><b><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Categories</b></u></p>
+                <ul>
+                    <li><input type="checkbox" name="" id="">Full Stack</li>
+                    <li><input type="checkbox" name="" id="">Java</li>
+                    <li><input type="checkbox" name="" id="">C</li>
+                    <li><input type="checkbox" name="" id="">C++</li>
+                </ul>
+                <p><u><b><i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i> Prices</b></u></p>
+                <ul>
+                    <li><input type="checkbox" name="" id="">Free</li>
+                    <li><input type="checkbox" name="" id="">Paid</li>
+                </ul>
+            </div>
+        </div>
+        <div class="containeer-four-right">
+            <div class="videos">
+                <h1>Video lectures</h1>
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/bL-o2xBENY0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <p><b><i>Variables and Output / Input in C++ | Lecture 3 | C++ and DSA Foundation Course</i></b></p>
+                <iframe width="460" height="215" src="https://www.youtube.com/embed/BQ5PwItzNBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><p><b><i>Variables & Input/Output in Java | Lecture 3 | Java and DSA Foundation Course</i></b></p>
+                <p id="viewmore">
+                    view more..
+                </p>
+            </div>
+        </div>
+    </div> <br>
+    <footer>
+        <div class="ownerinfo">
+            <h3>E-learning Project</h3>
+            <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> elearning@support.com</p>
+            <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i> +91 9999999999</p>
+        </div>
+        <div class="products">
+            <h3>Products</h3>
+            <p>Online courses</p>
+            <p>Exam preparation</p>
+            <p>Exam notes</p>
+        </div>
+    </footer>
+    <script src="homepage/script.js"></script>
 </body>
 </html>
