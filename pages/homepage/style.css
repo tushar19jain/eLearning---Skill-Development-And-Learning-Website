@@ -127,6 +127,7 @@
 }
 #viewmore{
     color: #4848e5;
+    cursor: pointer;
 }
 .container-right-heading{
     color: #0d0d0d;
@@ -141,4 +142,41 @@ footer{
     background-color: #0d0d0d;
     color: #fff;
     line-height: 30px;
+}
+#login-signup-popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 30px;
+    margin-left: 520px;
+    margin-right: 520px;
+    margin-top: -40px;
+    border-radius: 18px;
+}
+.form-controls{
+    display: flex;
+    justify-content: space-between;
+}
+#popup-form input{
+    margin: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 0.5px solid #A076F9;
+}
+#popup-form input[type="submit"]{
+    background-color: #A076F9;
+    color: #fff;
+    cursor: pointer;
+}
+#closeForm{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.form-greet{
+    font-size: 18px;
+    color: #0d0d0d;
+    font-weight: 800;
 }
