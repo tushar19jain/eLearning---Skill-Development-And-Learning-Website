@@ -10,3 +10,7 @@ else if(time <=12){
 else{
     document.getElementById('greeting').innerText = "Good Evening";
 }
+function closePopup(){
+    event.preventDefault();
+    document.getElementById("login-signup-popup").style.display = 'none';
+}

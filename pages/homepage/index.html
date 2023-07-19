@@ -44,20 +44,20 @@
         <h2 id="username">Tushar</h2>
     </div>
     <div id="login-signup-popup">
-        <form action="" id="popup-form">
+        <form action="/", method="post"id="popup-form">
             <div class="form-controls">
                 <div class="form-greet">
                     Hello, user
                 </div>
                 <div class="close-form">
-                    <button id="closeForm">
+                    <button id="closeForm" onclick="closePopup()">
                         <i class="fa-solid fa-xmark fa-lg" style="color: #000000;"></i>
                     </button>
                 </div>
             </div>
-            <input type="text" name="" id="" placeholder="Enter your name"> <br>
-            <input type="email" name="" id="" placeholder="demo123@gmail.com"> <br>
-            <input type="password" name="" id="" placeholder="Set your password"> <br>
+            <input type="text" name="" id="usr" placeholder="Enter your name"> <br>
+            <input type="email" name="" id="email" placeholder="demo123@gmail.com"> <br>
+            <input type="password" name="" id="password" placeholder="Set your password"> <br>
             <input type="submit" value="Signup">
         </form>
     </div>
@@ -112,5 +112,4 @@
       AOS.init();
     </script>
     <script src="homepage/script.js"></script>
-</body>
 </html>
