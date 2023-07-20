@@ -4,7 +4,7 @@ const multer = require('multer');
 const uplode = multer();
 const port = 3000;
 const {MongoClient, Collection} = require('mongodb');
-const url = 'mongodb+srv://jaint381:IxcoZULZH78cacCt@e-learning.hvqtogq.mongodb.net/'
+const url = ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯
 const database = 'users';
 const client = new MongoClient(url);
 client.connect();
