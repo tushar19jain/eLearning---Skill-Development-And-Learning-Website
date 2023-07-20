@@ -18,7 +18,10 @@ app.use(express.static('pages'));
 app.use(uplode.array());
 app.get('/',(req,res)=>{
     res.sendFile('pages/homepage/index.html',{root:__dirname});
-    app.post('/',(req,res)=>{
+})
+app.get('/Auth-Signup',(req,res)=>{
+    res.sendFile('pages/signup/signup.html',{root:__dirname});
+    app.post('/Auth-Signup',(req,res)=>{
         let collection = db.collection("users");
         let name  = req.body.user;
         let eml = req.body.email;
@@ -29,8 +32,9 @@ app.get('/',(req,res)=>{
             Password : `${pass}`
         });
         console.log(eml);
-        res.send(result);
+        res.redirect('/');
     })
+
 })
 app.listen(3000,()=>{
     console.log(`server running on port : ${port}`);

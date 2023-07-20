@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <!--Including the style sheet-->
+     <link rel="stylesheet" href="homepage/style.css">
+     <!--Including Google fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+     <!--Including Font Awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup/signup.css">
+    <title>E-Learning SignUp</title>
+</head>
+<body>
+    <div id="login-signup-popup">
+        <form action="Auth-Signup", method="post"id="popup-form">
+            <div class="form-controls">
+                <div class="form-greet">
+                    Sign Up!
+                </div>
+                <div class="close-form">
+                    <button id="closeForm" onclick="closePopup()">
+                        <i class="fa-solid fa-xmark fa-lg" style="color: #000000;"></i>
+                    </button>
+                </div>
+            </div>
+            <input type="text" name="user" id="usr" placeholder="Enter your name"> <br>
+            <input type="email" name="email" id="email" placeholder="demo123@gmail.com"> <br>
+            <input type="password" name="password" id="password" placeholder="Set your password"> <br>
+            <input type="submit" value="Signup">
+        </form>
+    </div>
+</body>
+</html>

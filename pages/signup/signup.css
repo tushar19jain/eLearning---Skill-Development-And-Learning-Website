@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:
+    conic-gradient(from 150deg at 50% 33%,#0000,#b0b4ff .5deg 60deg,#0000 60.5deg) 
+    calc(30px/2) calc(30px/1.4),
+    conic-gradient(from -30deg at 50% 66%,#0000,#b0b4ff .5deg 60deg,#ddeff5 60.5deg);
+    background-size: 30px calc(30px/1.154);
+
+}
+#login-signup-popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 30px;
+    margin-left: 520px;
+    margin-right: 520px;
+    margin-top: 150px;    
+    background: rgba(255, 255, 255, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.62);
+}
+.form-controls{
+    display: flex;
+    justify-content: space-between;
+}
+#popup-form input{
+    margin: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.527);;
+}
+#popup-form input[type="submit"]{
+    background-color: #A076F9;
+    color: #fff;
+    cursor: pointer;
+}
+#closeForm{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.form-greet{
+    font-size: 18px;
+    color: #0d0d0d;
+    font-weight: 800;
+}
