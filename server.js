@@ -3,8 +3,13 @@ const app = express();
 const multer = require('multer');
 const uplode = multer();
 const port = 3000;
+<<<<<<< HEAD
 const {MongoClient, Collection} = require('mongodb');
 const url = 'mongodb+srv://jaint381:IxcoZULZH78cacCt@e-learning.hvqtogq.mongodb.net/'
+=======
+const {MongoClient} = require('mongodb');
+const url = ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯ (CAN'T BE DISCLOSED)
+>>>>>>> 4431bb5156b6bb197edddf515038bd2dc9086b2a
 const database = 'users';
 const client = new MongoClient(url);
 client.connect();
