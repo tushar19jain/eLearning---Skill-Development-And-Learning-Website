@@ -36,6 +36,24 @@ app.get('/Auth-Signup',(req,res)=>{
     })
 
 })
+app.get('/Auth-Login',(req,res)=>{
+    res.sendFile('pages/login/login.html',{root:__dirname});
+    app.post('/Auth-login',(req,res)=>{
+        let userEmail = req.body.userEnteredEmail;
+        let userPassword = req.body.userEnteredPassword;
+       const match =  collection.findOne({
+            Email : userEmail,
+            Password : userPassword
+       });
+       if(match == 'None'){
+        res.status(400)
+        res.send("Can't find the user")
+       }
+       else{
+        res.redirect('/')
+       }
+    })
+})
 app.listen(3000,()=>{
     console.log(`server running on port : ${port}`);
 })

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background:#fff;
+    background-color: #fff;
 }
 #login-signup-popup{
     display: flex;

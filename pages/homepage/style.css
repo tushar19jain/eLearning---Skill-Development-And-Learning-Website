@@ -53,6 +53,10 @@ body{
     color: #fff;
     text-decoration: none;
 }
+.btn-login a{
+    color: #fff;
+    text-decoration: none;
+}
 .container-two{
     display: flex;
     justify-content: center;
